@@ -27,7 +27,7 @@ Gem::Specification.new do |s|
     "optipng.gemspec",
     "test"
   ]
-  s.homepage = %q{https://github.com/martinkozak/optipng}
+  s.homepage = %q{https://github.com/artie18/optipng}
   s.licenses = [%q{MIT}]
   s.require_paths = [%q{lib}]
   s.rubygems_version = %q{2.4.8}
