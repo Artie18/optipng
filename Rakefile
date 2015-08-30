@@ -16,11 +16,11 @@ require 'jeweler'
 Jeweler::Tasks.new do |gem|
   # gem is a Gem::Specification... see http://docs.rubygems.org/read/chapter/20 for more options
   gem.name = "optipng"
-  gem.homepage = "https://github.com/martinkozak/optipng"
+  gem.homepage = "https://github.com/Artie18/optipng"
   gem.license = "MIT"
   gem.summary = "Ruby interface to 'optipng' tool."
-  gem.email = "martinkozak@martinkozak.net"
-  gem.authors = ["Martin Kozák"]
+  gem.email = "artyomfedenko@hotmail.com"
+  gem.authors = ["Artyom Fedenko"]
   # Include your dependencies below. Runtime dependencies are required when using your gem,
   # and development dependencies are only needed for development (ie running rake tasks, tests, etc)
   #  gem.add_runtime_dependency 'jabber4r', '> 0.1'
