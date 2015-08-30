@@ -1,3 +1,5 @@
+0.3.0 (2015-09-30)
+* changed whois gem to outofthebox mkmf library
 
 0.2.1 (2011-07-30)
 * executing directly by 'command-builder'
@@ -5,5 +7,5 @@
 0.2.0 (2011-02-22)
 * asynchronous executing support
 
-0.1.0 (2011-02-21) 
+0.1.0 (2011-02-21)
 * initial version
