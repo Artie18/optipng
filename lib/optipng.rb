@@ -60,6 +60,11 @@ module Optipng
 
   def self.optimize(paths, options = {}, &block)
 
+    # Check if optipng available
+    unless options[:is_available] && self.available?
+      throw Exception.new('Optipng is not installed')
+    end
+
     # Command
     cmd = CommandBuilder::new(self::COMMAND)
 
@@ -76,8 +81,8 @@ module Optipng
     # Runs the command
     cmd << paths
 
-    if options[:debug] == true
-      STDERR.write cmd.to_s + "\n"
+    if options[:debug]
+      STDERR.write "#{cmd.to_s}\n"
     end
 
     # Blocking
@@ -109,9 +114,9 @@ module Optipng
     errors = []
     succeed = {}
 
-    output.split("**").each do |section|
+    output.split('**').each do |section|
       section.strip!
-      if section.start_with? "Processing:"
+      if section.start_with? 'Processing:'
 
         # Scans each line
         filename = nil
@@ -125,7 +130,7 @@ module Optipng
           elsif m = line.match(self::MATCHERS[2])
             succeed[filename] = -1 * m[1].to_f
             next
-          elsif m = line.match(self::MATCHERS[3])
+          elsif line.match(self::MATCHERS[3])
             succeed[filename] = 0.0
           end
         end
