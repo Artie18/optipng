@@ -1,4 +1,4 @@
-source "http://rubygems.org"
+source 'http://rubygems.org'
 # Add dependencies required to use your gem here.
 # Example:
    gem 'command-builder', '>= 0.3.2'
