@@ -1,6 +1,8 @@
 Optipng
 =======
 
+[![Gem Version](https://badge.fury.io/rb/optipng-r.svg)](http://badge.fury.io/rb/optipng-r)
+
 **Optipng** provides Ruby interface to the [`optipng`][1] tool.
 Some examples follow: (for details, see module documentation)
 
