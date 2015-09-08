@@ -61,7 +61,7 @@ module Optipng
   def self.optimize(paths, options = {}, &block)
 
     # Check if optipng available
-    unless options[:is_available] && self.available?
+    if options[:is_available] && !self.available?
       throw Exception.new('Optipng is not installed')
     end
 
